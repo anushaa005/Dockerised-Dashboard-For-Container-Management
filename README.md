@@ -216,9 +216,6 @@ Two ML models run simultaneously on each container's CPU history:
 
 A ✓ agree badge appears when both models are within 5% of each other. A ⚡ diverge badge warns when they differ — usually indicating a recent sudden change that OLS hasn't caught up to yet.
 
-### Health
-War-room scorecard view. One tile per container showing status, live CPU with a trend arrow, memory fill bar, PIDs, and network/disk summary. Below the tiles is a live lifecycle event stream — every container start, stop, die, restart, and kill event appears here within 2 seconds.
-
 ### Heatmap
 Time × container CPU intensity grid. Each row is a container, each column is one 2-second sample (up to 120 columns = 4 minutes of history). Colour ranges from dark blue (low) through yellow (medium) to red (high). Hover any cell for the exact timestamp and CPU value. Reveals patterns invisible in line charts — a column of red across all containers indicates a fleet-wide spike event.
 
