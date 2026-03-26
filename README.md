@@ -92,12 +92,6 @@ flowchart TD
 | Prediction | EMA model | Exponential moving average — faster response to spikes |
 | Prediction | Model comparison | Side-by-side R² confidence, slope, and delta cards |
 | Prediction | History table | Timestamped log of all collected metrics with both model predictions |
-| **Health** | Scorecard tiles | Colour-coded tile per container — HEALTHY / WARNING / CRITICAL |
-| **Health** | Trend arrows | ↑ ↗ → ↓ per container based on OLS slope |
-| **Health** | Lifecycle events | Real-time stream of container start / stop / die / restart events |
-| **Heatmap** | CPU heatmap | Time × container grid coloured by CPU intensity — spot patterns instantly |
-| **Network** | Topology map | Real Docker network layout from `docker inspect` — IPs, MACs, ports |
-| **Inspector** | Full detail | Image, creation time, limits, ports, volumes, networks, env vars (filtered) |
 | Topbar | CSV export | Download all collected metrics as a timestamped CSV file |
 | Topbar | Pause / Resume | Freeze all polling and rendering without losing history |
 
