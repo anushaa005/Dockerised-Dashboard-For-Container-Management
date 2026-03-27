@@ -165,7 +165,7 @@ crmtr/
 
 ```bash
 # 1. Clone
-git clone https://github.com/chavi15/Smart-Container-Resource-Monitor.git
+git clone https://github.com/chavi15/Dockerised-Dashboard-For-Container-Management.git
 cd crmtr
 
 # 2. Start some containers to monitor
@@ -349,10 +349,7 @@ Applies limits using `docker update --cpus X --memory Y containerName`. Docker t
 - **Anomaly detection** — Z-score based alerting that fires when a metric deviates more than 2 standard deviations from its rolling mean, rather than fixed thresholds
 - **Alert webhooks** — POST to Slack, Discord, or PagerDuty when a critical alert fires
 - **User authentication** — login page so the dashboard can be deployed on a server safely
-- **Docker Compose grouping** — group containers by their Compose project/service name
-- **Container restart button** — `docker restart containerName` with a confirmation prompt in the UI
-- **Log search** — full-text search across all container logs
-- **Custom alert rules** — UI to add your own threshold rules saved to a JSON file
+
 
 ---
 
