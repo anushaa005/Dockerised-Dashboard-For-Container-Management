@@ -165,7 +165,7 @@ crmtr/
 
 ```bash
 # 1. Clone
-git clone https://github.com/chavi15/Smart-Container-Resource-Monitor.git
+git clone https://github.com/chavi15/Dockerised-Dashboard-For-Container-Management.git
 cd crmtr
 
 # 2. Start some containers to monitor
@@ -219,11 +219,6 @@ A ✓ agree badge appears when both models are within 5% of each other. A ⚡ di
 ### Heatmap
 Time × container CPU intensity grid. Each row is a container, each column is one 2-second sample (up to 120 columns = 4 minutes of history). Colour ranges from dark blue (low) through yellow (medium) to red (high). Hover any cell for the exact timestamp and CPU value. Reveals patterns invisible in line charts — a column of red across all containers indicates a fleet-wide spike event.
 
-### Network
-Calls `docker inspect` on every running container in parallel, extracts `NetworkSettings.Networks`, and groups containers by network membership. Each container card shows its IP address, MAC address, gateway, and exposed ports. Shows the real Docker network topology as it exists.
-
-### Inspector
-Full `docker inspect` output parsed and presented in a two-column panel: identity (name, image, hostname, creation date, start time, status, restart count), resource configuration (CPU limit, memory limit, restart policy), live metrics from the current tick, ports, network memberships with IPs, volume mounts with source → destination paths, and environment variables with passwords/keys/tokens filtered out automatically.
 
 ---
 
@@ -345,14 +340,8 @@ Applies limits using `docker update --cpus X --memory Y containerName`. Docker t
 - **WebSockets** — push metrics from server to browser instead of polling, reducing latency to near-zero
 - **Persistent storage** — SQLite database to retain metric history across server restarts
 - **Multi-host production** — full agent model with TLS authentication between agents and server
-- **Kubernetes support** — replace `docker stats` with the Kubernetes Metrics API for pod-level monitoring
 - **Anomaly detection** — Z-score based alerting that fires when a metric deviates more than 2 standard deviations from its rolling mean, rather than fixed thresholds
-- **Alert webhooks** — POST to Slack, Discord, or PagerDuty when a critical alert fires
-- **User authentication** — login page so the dashboard can be deployed on a server safely
-- **Docker Compose grouping** — group containers by their Compose project/service name
-- **Container restart button** — `docker restart containerName` with a confirmation prompt in the UI
-- **Log search** — full-text search across all container logs
-- **Custom alert rules** — UI to add your own threshold rules saved to a JSON file
+
 
 ---
 
